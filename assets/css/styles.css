@@ -36,3 +36,18 @@ p{
    transition: all 0.3 ease-in-out;
    margin-bottom: 20px;
 }
+
+.addSubmit{
+    border-radius: 2rem;
+    padding: 10px;
+    width: 5%;
+    border: none; 
+    cursor: pointer;
+    background-color:rgb(215, 122, 231); 
+    color: rgb(66, 38, 139);
+}
+
+.addSubmit:hover{
+    color:rgb(215, 122, 231); 
+    background-color: rgb(66, 38, 139);
+}
