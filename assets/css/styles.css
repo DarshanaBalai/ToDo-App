@@ -15,7 +15,7 @@ h1{
     margin: 10px;
     font-weight: 900;
     font-size: 60px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
 }
 
 p{
@@ -24,5 +24,15 @@ p{
     margin: 10px;
     font-weight: 300;
     font-size: 25px;
-    padding-bottom: 30px; 
+    padding-bottom: 50px; 
+}
+
+.addInput{
+    margin-left: 37%;
+    border-radius: 2rem;
+    padding: 10px;
+    width: 20%;
+    border: none;
+   transition: all 0.3 ease-in-out;
+   margin-bottom: 20px;
 }
