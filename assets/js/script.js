@@ -22,7 +22,23 @@ addedInput.type = "text";
 addedInput.value = addedTask;
 addedInput.setAttribute('readonly', 'readonly');
 
+task_content.appendChild(addedInput);
 
+const buttons = document.createElement('div');
+buttons.classList.add('button');
+
+const editButton = document.createElement('div');
+editButton.classList.add('editButton');
+editButton.innerText = "Edit";
+
+const deleteButton = document.createElement('div');
+deleteButton.classList.add('deleteButton');
+deleteButton.innerText = "Delete";
+
+buttons.appendChild(editButton);
+buttons.appendChild(deleteButton);
+
+task_container.appendChild(buttons);
 
 }
 
