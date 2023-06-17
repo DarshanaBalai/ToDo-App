@@ -8,6 +8,8 @@ e.preventDefault();
 
 const addedTask = inputTask.value;
 
+
+
 const task_container = document.createElement('div');
 task_container.classList.add('containerTask')
 
@@ -40,6 +42,21 @@ buttons.appendChild(deleteButton);
 
 task_container.appendChild(buttons);
 
+inputTask.value = "";
+
+editButton.addEventListener('click', (e) => {
+if (editButton.innerText.toLowerCase() == "edit"){
+    addedInput.removeAttribute('readonly', 'readonly');
+    editButton.innerText = "Save"; 
+}else{
+    editButton.innerText = "Save"; 
+    inputTask.setAttribute("readonly", "readonly");
+	}
+
+});
+
+
 }
+
 
 
