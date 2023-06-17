@@ -8,15 +8,13 @@ e.preventDefault();
 
 const addedTask = inputTask.value;
 
-
-
 const task_container = document.createElement('div');
 task_container.classList.add('containerTask')
 
 const task_content = document.createElement('div');
 task_content.classList.add('task_Content');
 
-task_container.appendChild(task_container);
+task_container.appendChild(task_content);
 
 const addedInput = document.createElement('input');
 addedInput.classList.add("added_input")
@@ -42,6 +40,8 @@ buttons.appendChild(deleteButton);
 
 task_container.appendChild(buttons);
 
+task.appendChild(task_container);
+
 inputTask.value = "";
 
 editButton.addEventListener('click', (e) => {
@@ -55,8 +55,11 @@ if (editButton.innerText.toLowerCase() == "edit"){
 
 });
 
+deleteButton.addEventListener('click', (e) => {
+    task.removeChild(task_container);
+})
 
-}
+});
 
 
 
