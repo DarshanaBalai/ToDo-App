@@ -61,3 +61,27 @@ p{
    transition: all 0.3 ease-in-out;
    margin-bottom: 20px;
 }
+
+.added_input, .button{
+display: flex;
+}
+
+.deleteButton{
+    border-radius: 2rem;
+    padding: 10px;
+    width: 5%;
+    border: none; 
+    cursor: pointer;
+    background-color:rgb(215, 122, 231); 
+    color: rgb(66, 38, 139); 
+}
+
+.editButton{
+    border-radius: 2rem;
+    padding: 10px;
+    width: 5%;
+    border: none; 
+    cursor: pointer;
+    background-color:rgb(215, 122, 231); 
+    color: rgb(66, 38, 139); 
+}

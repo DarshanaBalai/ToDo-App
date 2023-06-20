@@ -35,11 +35,11 @@ buttons.classList.add('button');
 
 const editButton = document.createElement('div');
 editButton.classList.add('editButton');
-editButton.innerText = '<i class="fa-solid fa-pen-to-square"></i>';
+editButton.innerText = 'Edit';
 
 const deleteButton = document.createElement('div');
 deleteButton.classList.add('deleteButton');
-deleteButton.innerText = '<i class="fas fa-check-circle"></i>';
+deleteButton.innerText = 'Delete';
 
 buttons.appendChild(editButton);
 buttons.appendChild(deleteButton);
@@ -52,13 +52,12 @@ inputTask.value = "";
 
 editButton.addEventListener('click', (e) => {
     console.log("done3")
-   if(editButton.innerText == '<i class="fa-solid fa-pen-to-square"></i>'){
-// if (editButton.innerText.toLowerCase() == "edit"){
+if (editButton.innerText.toLowerCase() == "edit"){
     addedInput.removeAttribute('readonly');
-    editButton.innerText = '<i class="fa-solid fa-bookmark"></i>'; 
+    editButton.innerText = 'Save'; 
     addedInput.focus();
 }else{
-    editButton.innerText ='<i class="fa-solid fa-pen-to-square"></i>'; 
+    editButton.innerText ='Edit'; 
     addedInput.setAttribute("readonly", "readonly");
 	}
     console.log("done4")
