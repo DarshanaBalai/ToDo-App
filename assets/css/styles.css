@@ -38,13 +38,15 @@ p{
 }
 
 .addSubmit{
-    border-radius: 2rem;
-    padding: 10px;
-    width: 5%;
+    margin-left: -3%;
+    border-radius: 50%;
+    padding:10px;
+    width:40px;
     border: none; 
     cursor: pointer;
     background-color:rgb(215, 122, 231); 
     color: rgb(66, 38, 139);
+    
 }
 
 .addSubmit:hover{
@@ -53,46 +55,59 @@ p{
 }
 
 .added_input{
-    margin-left: 37%;
+  
     border-radius: 2rem;
     padding: 10px;
-    width: 20%;
+   width: auto;
     border: none;
    transition: all 0.3 ease-in-out;
-  
+  display: flex;
+padding-bottom: 10px;
+ margin: 10px;
 }
 
- .added_input, .button{
+ /* .added_input, .button{
     display: flex;
     justify-content: center;
-} 
-
-
-/* .added_input, .button{
-display: flex;
-
 }  */
 
-#Container{
+.containerTask, .task_Content, .button{
     display: flex;
-    
+    justify-content: center;
 }
+/* .added_input,.deleteButton,.editButton {
+display: flex;
+justify-content: center;
+} */
+
+
+
 .deleteButton{
-    border-radius: 2rem;
-    padding: 10px;
-    width: 5%;
+    font-size: .9rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
     border: none; 
     cursor: pointer;
     background-color:rgb(215, 122, 231); 
     color: rgb(66, 38, 139); 
+    margin-bottom: 10px;
+    border-radius: 50%;
+    /* padding:10px; */
+    width:35px;
+    margin-left: 5px;
 }
 
 .editButton{
-    border-radius: 2rem;
-    padding: 10px;
-    width: 5%;
+  font-size: .9rem;
+    border-radius:50%;
+    /* padding: 10px;  */
+    width: 35px;
+    height: 35px;
     border: none; 
     cursor: pointer;
     background-color:rgb(215, 122, 231); 
     color: rgb(66, 38, 139); 
+    margin-bottom: 10px;
+ margin-top: 10px;
+
 }

@@ -53,9 +53,9 @@ inputTask.value = "";
 editButton.addEventListener('click', (e) => {
     console.log("done3")
 if (editButton.innerHTML == '<i class="fa-regular fa-pen-to-square"></i>') {
-    addedInput.removeAttribute('readonly');
+    addedInput.removeAttribute('readonly', 'readonly');
     editButton.innerHTML = '<i class="fa-solid fa-bookmark"></i>'; 
-    addedInput.focus();
+    
 }else{
     editButton.innerHTML ='<i class="fa-regular fa-pen-to-square"></i>'; 
     addedInput.setAttribute("readonly", "readonly");
