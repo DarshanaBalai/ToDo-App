@@ -38,10 +38,10 @@ p{
 }
 
 .addSubmit{
-    margin-left: -3%;
+    /* margin-left: -3%; */
     border-radius: 50%;
     padding:10px;
-    width:40px;
+    width:35px;
     border: none; 
     cursor: pointer;
     background-color:rgb(215, 122, 231); 
@@ -58,7 +58,7 @@ p{
   
     border-radius: 2rem;
     padding: 10px;
-   width: auto;
+   width: 280px;
     border: none;
    transition: all 0.3 ease-in-out;
   display: flex;
@@ -66,20 +66,11 @@ padding-bottom: 10px;
  margin: 10px;
 }
 
- /* .added_input, .button{
-    display: flex;
-    justify-content: center;
-}  */
 
 .containerTask, .task_Content, .button{
     display: flex;
     justify-content: center;
 }
-/* .added_input,.deleteButton,.editButton {
-display: flex;
-justify-content: center;
-} */
-
 
 
 .deleteButton{
@@ -109,5 +100,5 @@ justify-content: center;
     color: rgb(66, 38, 139); 
     margin-bottom: 10px;
  margin-top: 10px;
-
+margin-left: 1px;
 }
