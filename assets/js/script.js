@@ -9,10 +9,10 @@ taskForm.addEventListener('submit', (e) => {
 e.preventDefault();
 console.log("done1")
 const addedTask = inputTask.value;
-if(!inputTask.value){
-    alert("Please add your task");
-    return;
-}
+//  if(!inputTask.value){
+//     alert("Please add your task");
+//    return;
+// }
 
 const task_container = document.createElement('div');
 task_container.classList.add('containerTask')
@@ -33,13 +33,13 @@ console.log("done2")
 const buttons = document.createElement('div');
 buttons.classList.add('button');
 
-const editButton = document.createElement('div');
+const editButton = document.createElement('button');
 editButton.classList.add('editButton');
-editButton.innerText = 'Edit';
+editButton.innerHTML = '<i class="fa-regular fa-pen-to-square"></i>';
 
-const deleteButton = document.createElement('div');
+const deleteButton = document.createElement('button');
 deleteButton.classList.add('deleteButton');
-deleteButton.innerText = 'Delete';
+deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
 
 buttons.appendChild(editButton);
 buttons.appendChild(deleteButton);
@@ -52,12 +52,12 @@ inputTask.value = "";
 
 editButton.addEventListener('click', (e) => {
     console.log("done3")
-if (editButton.innerText.toLowerCase() == "edit"){
+if (editButton.innerHTML == '<i class="fa-regular fa-pen-to-square"></i>') {
     addedInput.removeAttribute('readonly');
-    editButton.innerText = 'Save'; 
+    editButton.innerHTML = '<i class="fa-solid fa-bookmark"></i>'; 
     addedInput.focus();
 }else{
-    editButton.innerText ='Edit'; 
+    editButton.innerHTML ='<i class="fa-regular fa-pen-to-square"></i>'; 
     addedInput.setAttribute("readonly", "readonly");
 	}
     console.log("done4")

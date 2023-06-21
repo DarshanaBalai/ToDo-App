@@ -59,13 +59,24 @@ p{
     width: 20%;
     border: none;
    transition: all 0.3 ease-in-out;
-   margin-bottom: 20px;
+  
 }
 
-.added_input, .button{
+ .added_input, .button{
+    display: flex;
+    justify-content: center;
+} 
+
+
+/* .added_input, .button{
 display: flex;
-}
 
+}  */
+
+#Container{
+    display: flex;
+    
+}
 .deleteButton{
     border-radius: 2rem;
     padding: 10px;
